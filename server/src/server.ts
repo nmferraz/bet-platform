@@ -1,7 +1,9 @@
-import Fastify from "fastify"
+import Fastify from "fastify";
 
 async function bootstrap() {
-    const fastify = Fastify({ logger: true })
+  const fastify = Fastify({ logger: true });
+
+  await fastify.listen({ port: 3333 });
 }
 
-bootstrap()
+bootstrap();
